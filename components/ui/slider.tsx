@@ -18,7 +18,7 @@ export default function SimpleSlider({ photos }: SimpleSliderProps) {
   return (
     <Slider {...settings}>
       {photos.map((photo, index) => (
-        <div key={index} className="h-[70vh] w-[80vh]">
+        <div key={index} className="h-full w-[60vh]">
           <img
             src={photo}
             alt={`Slide ${index + 1}`}

@@ -71,7 +71,7 @@ export default function Flats() {
           </div>
           <div>
             <div className="flex justify-center">
-              <div className="w-full h-auto">
+              <div className="w-[90%] h-full">
                 {flatSelection && (
                   <SimpleSlider photos={flatSelection.photos} />
                 )}
