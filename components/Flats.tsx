@@ -23,11 +23,19 @@ const customStyles = {
   },
 };
 
+interface Flat {
+  id: number;
+  size: string;
+  price: string;
+  thumbnail: string;
+  photos: string[];
+}
+
 export default function Flats() {
-  const [flatSelection, setflatSelection] = useState(null);
+  const [flatSelection, setflatSelection] = useState<Flat | null>(null);
   const [modalIsOpen, setIsOpen] = useState(false);
 
-  const openModal = (flatSize) => {
+  const openModal = (flatSize: string) => {
     const flatSelection = flats.filter((flat) => {
       return flat.size === flatSize;
     });
@@ -54,12 +62,19 @@ export default function Flats() {
           contentLabel="Example Modal"
         >
           <div className="flex justify-end ">
-            <MagicButton title="Закрыть" handleClick={closeModal} />
+            <MagicButton
+              title="Закрыть"
+              handleClick={closeModal}
+              icon={null}
+              position=""
+            />
           </div>
           <div>
             <div className="flex justify-center">
               <div className="w-full h-auto">
-                <SimpleSlider photos={flatSelection?.photos} />
+                {flatSelection && (
+                  <SimpleSlider photos={flatSelection.photos} />
+                )}
               </div>
             </div>
             <p
@@ -94,7 +109,7 @@ export default function Flats() {
                         key={flat.id}
                         className="w-full md:w-1/3 px-2 mb-4 animate-pop-in"
                       >
-                        <h3 className="text-xl font-semibold mb-4 line-clamp-1 text-purple text-center">
+                        <h3 className="text-xl font-semibold mb-4 text-purple text-center">
                           {flat.size}
                         </h3>
                         <div className=" p-2 flex items-center flex-col">

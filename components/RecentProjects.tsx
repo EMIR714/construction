@@ -27,7 +27,11 @@ const RecentProjects = () => {
                   className="lg:rounded-3xl flex items-center justify-center"
                   style={{ width: "150px" }}
                 >
-                  <img src={item.img} alt="cover" className="w-30 z-10 " />
+                  <img
+                    src={item.img}
+                    alt="cover"
+                    className=" animate-bounce animate-pulse w-30 z-1 "
+                  />
                 </div>
               </div>
 
