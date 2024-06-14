@@ -72,68 +72,66 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
+    title: "Гарантия соблюдения сроков",
+    des: "Документальные гарантии возврата ваших денег, если строительство затянется по срокам",
+    img: "/yr1.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
     link: "/ui.earth.com",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
+    title: "Можем подтвердить надежность застройщика",
+    des: "Высылаем документы для юридической проверки",
+    img: "/yr4.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+    link: "/ui.apple.com",
+  },
+  {
+    id: 3,
+    title: "Планировка и комплектация закреплены в договоре",
+    des: "В приложении к договору вы сможете посмотреть как будет укомплектована ваша квартира и планировка",
+    img: "/yr3.svg",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "/ui.yoom.com",
   },
   {
-    id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
+    id: 4,
+    title: "Наличие разрешительных документов",
+    des: "Получены все разрешительные документы на строительство и благоустройство всей площади вашего дома мечты",
+    img: "/yr2.svg",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
     link: "/ui.aiimg.com",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Здравствуйте! Я купила квартиру в СК «Пионер» и не пожалела, ведь качество строительства дома на высшем уровне. Все материалы качественные, серьёзный подход!",
+    name: "Гульмира",
+    title: "О качестве строительства",
+    profile: "/profile3.jpg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Сейчас в покупке квартиры в Бишкеке - самое главное все разрешительные документы и красная книга на земельный участок, что есть не во всех строительных компаниях. Это все я нашёл в Строительной Компании «Пионер».",
+    name: "Эмир",
+    title: "О наличии всех разрешительных документов",
+    profile: "/profile4.jpg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Здравствуйте! Удачи и процветания вашей компании. Отдельное спасибо за гибкий график оплаты, руководство пошло мне на встречу и составили удобный для меня график)",
+    name: "Нурсултан",
+    title: "О гибких условиях оплаты",
+    profile: "/profile2.jpg",
   },
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+      "Спасибо большое отделу продаж за доброжелательное и качественное обслуживание! Цена соответствует качеству.",
+    name: "Роза",
+    title: "О качестве строительства",
+    profile: "/profile1.jpg",
   },
 ];
 
@@ -173,31 +171,39 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Красная книга",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/pre1.png",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Центральные коммуникации",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    thumbnail: "/pre2.png",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Тепло и шумоизоляция наружных стен",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    thumbnail: "/pre3.png",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Сейсмоустойчивость",
     className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
+    thumbnail: "/pre4.png",
+  },
+  {
+    id: 5,
+    title: "Автоматическое освещение фасада здания и двора",
+    className: "md:col-span-2",
+    thumbnail: "/pre5.png",
+  },
+  {
+    id: 6,
+    title: "Природный газ",
+    className: "md:col-span-2",
+    thumbnail: "/pre6.png",
   },
 ];
 
@@ -213,5 +219,67 @@ export const socialMedia = [
   {
     id: 3,
     img: "/link.svg",
+  },
+];
+
+export const flats = [
+  {
+    id: 1,
+    size: "1 комнатные",
+    price: "от 49,7 кв.м от 3 121 350 сом ~ 34 790$",
+    thumbnail: "/1kom.jpg",
+    photos: [
+      "/1kom.jpg",
+      "/kom1.2.jpg",
+      "/kom1.3.jpg",
+      "/kom1.4.jpg",
+      "/kom1.5.jpg",
+      "/kom1.6.jpg",
+      "/kom1.7.jpg",
+      "/kom1.8.jpg",
+      "/kom1.9.jpg",
+      "/kom1.10.jpg",
+      "/kom1.11.jpg",
+      "/kom1.12.jpg",
+      "/kom1.13.jpg",
+    ],
+  },
+  {
+    id: 2,
+    size: "2-х комнатные",
+    price: "от 64,8 кв.м от 4 069 700 сом ~ 45 360$",
+    thumbnail: "/2kom.jpg",
+    photos: [
+      "/2kom.jpg",
+      "/kom2.2.jpg",
+      "/kom2.3.jpg",
+      "/kom2.4.jpg",
+      "/kom2.5.jpg",
+      "/kom2.6.jpg",
+      "/kom2.7.jpg",
+      "/kom2.8.jpg",
+      "/kom2.9.jpg",
+    ],
+  },
+  {
+    id: 3,
+    size: "3-х комнатные",
+    price: "от 103,8 кв.м от 6 519 055 сом ~ 72 660$",
+    thumbnail: "/3kom.jpg",
+    photos: ["/3kom.jpg", "/kom3.2.jpg", "/kom3.3.jpg", "/kom3.4.jpg"],
+  },
+];
+export const banners = [
+  {
+    id: 1,
+    banner: "/banner1.png",
+  },
+  {
+    id: 2,
+    banner: "/banner2.png",
+  },
+  {
+    id: 3,
+    banner: "/banner3.png",
   },
 ];
