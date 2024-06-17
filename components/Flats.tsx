@@ -39,7 +39,6 @@ export default function Flats() {
     const flatSelection = flats.filter((flat) => {
       return flat.size === flatSize;
     });
-    console.log(flatSelection);
     setflatSelection(flatSelection[0]);
     setIsOpen(true);
   };
@@ -49,7 +48,7 @@ export default function Flats() {
   };
 
   return (
-    <section className="mt-2">
+    <section className="mt-2" id="planirovki">
       <h2 className="heading">
         Выберите планировку из готовых вариантов или закажите индивидуальную
         планировку на стадии строительства дома

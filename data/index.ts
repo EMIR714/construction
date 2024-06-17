@@ -1,8 +1,8 @@
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "Главная", link: "#about" },
+  { name: "Планировки", link: "#planirovki" },
+  { name: "Отзывы", link: "#testimonials" },
+  { name: "Контакты", link: "#contact" },
 ];
 
 export const gridItems = [
@@ -272,14 +272,20 @@ export const flats = [
 export const banners = [
   {
     id: 1,
-    banner: "/banner1.png",
+    title: "Расположение ЖК “Пионер Плюс",
+    banner: "/banner1F.png",
+    bannerDekstop: "/banner1.1F.png",
   },
   {
     id: 2,
-    banner: "/banner2.png",
+    title: "Забота о детях",
+    banner: "/banner2F.png",
+    bannerDekstop: "/banner2.1F.png",
   },
   {
     id: 3,
-    banner: "/banner3.png",
+    title: "Медицина",
+    banner: "/banner3F.png",
+    bannerDekstop: "/banner3.1F.png",
   },
 ];

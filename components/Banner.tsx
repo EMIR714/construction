@@ -4,29 +4,39 @@ import { banners } from "@/data";
 const Banner = () => {
   return (
     <div>
-      <h2 className="heading sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 font-medium">
-        Развитая инфраструктура
-        <span className="text-purple mr-2 ml-2">ЖК “Пионер Плюс”</span>
+      <h2 className="heading sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0 font-medium mb-2">
+        Развитая инфраструктура <br />
+        <span className="text-purple">ЖК “Пионер Плюс”</span> <br />
         позволяет получить все необходимое в шаговой доступности
       </h2>
-      <div className="flex flex-col gap-5">
-        <div>
-          <img src={banners[0].banner} alt="Banner 1" />
-          <div>
-            <p>Расположение ЖК “Пионер Плюс”</p>
-            <p className="line-clamp-3">
-              Рядом с жилым комплексом находятся все необходимые объекты для
-              комфортной жизни, такие как:
-            </p>
-            <p>Глобус</p>
-            <p>ТЦ Вефа</p>
-            <p>ЦУМ</p>
+      {/* Mobile view */}
+      <div className="flex flex-col gap-5 sm:hidden">
+        {banners.map((banner) => (
+          <div key={banner.id} className="flex flex-col">
+            <p className="text-center">{banner.title}</p>
+            <img
+              src={banner.banner}
+              alt={`Banner ${banner.id}`}
+              className="z-0"
+            />
           </div>
-        </div>
-        <img src={banners[1].banner} alt="Banner 2" />
-        <img src={banners[2].banner} alt="Banner 3" />
+        ))}
+      </div>
+
+      {/* Desktop view */}
+      <div className="hidden sm:flex flex-col gap-5">
+        {banners.map((banner) => (
+          <div key={banner.id} className="flex flex-col">
+            <img
+              src={banner.bannerDekstop}
+              alt={`Banner ${banner.id}`}
+              className="z-0 rounded-lg"
+            />
+          </div>
+        ))}
       </div>
     </div>
   );
 };
+
 export default Banner;

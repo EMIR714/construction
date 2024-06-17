@@ -1,51 +1,153 @@
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import logoPioner from "../public/logoPioner.svg";
 import { FaLocationArrow } from "react-icons/fa6";
-
-import { socialMedia } from "@/data";
-import MagicButton from "./MagicButton";
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
-      {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
-          src="/footer-grid.svg"
-          alt="grid"
-          className="w-full h-full opacity-50 "
-        />
+    <footer className="mx-auto max-w-[1920px] px-6">
+      <div className="flex flex-wrap justify-around">
+        <div className=" ">
+          <Link
+            href="https://pioner.kg/pioner/company.html"
+            className="flex items-center flex-initial font-bold flex-col"
+          >
+            <span className="mr-2 border rounded-full ">
+              <Image
+                src={logoPioner}
+                alt="Logo"
+                width={109}
+                height={114}
+                className="rounded-md"
+              />
+            </span>
+            <span>ПИОНЕР</span>
+          </Link>
+        </div>
+        <div className="col-span-1 lg:col-span-2">
+          <ul className="flex flex-col flex-initial md:flex-1">
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="#about"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                Главная
+              </Link>
+            </li>
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="https://pioner.kg/pioner/company.html"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                О компании
+              </Link>
+            </li>
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="#preimuchestva"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                Преимущества
+              </Link>
+            </li>
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="#planirovki"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                Планировки
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="col-span-1 lg:col-span-2">
+          <ul className="flex flex-col flex-initial md:flex-1">
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="#garantii"
+                className=" text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                Гарантии
+              </Link>
+            </li>
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="#approach"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                Оплата
+              </Link>
+            </li>
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="#contact"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                Контакты
+              </Link>
+            </li>
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="#end"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                Наши завершеннные проекты
+              </Link>
+            </li>
+          </ul>
+        </div>
+        <div className="col-span-1 lg:col-span-2">
+          <ul className="flex flex-col flex-initial md:flex-1">
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="https://2gis.kg/bishkek/firm/70000001043043738"
+                className="font-bold text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                ул. Льва Толстого 6К - пер. ул. Матросова
+              </Link>
+            </li>
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="tel:+996999690000"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                +996 999 69 00 00
+              </Link>
+            </li>
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="tel:+996509690000"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                +996 509 69 00 00
+              </Link>
+            </li>
+            <li className="py-3 md:py-0 md:pb-4">
+              <Link
+                href="tel:+996775690000"
+                className="text-white transition duration-150 ease-in-out hover:text-zinc-200"
+              >
+                +996 775 69 00 00
+              </Link>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
-        </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
-        </p>
-        <a href="mailto:contact@jsmastery.pro">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
-      </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Adrian Hajdin
-        </p>
-
-        <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
-            <div
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-            >
-              <img src={info.img} alt="icons" width={20} height={20} />
-            </div>
-          ))}
+      <div className="flex flex-col items-center justify-between py-12 space-y-4 md:flex-row">
+        <div>
+          <Link href="https://www.instagram.com/aksoftdev/">
+            <span>
+              &copy; {new Date().getFullYear()} Aksoft. Все права защищены.
+            </span>
+          </Link>
+        </div>
+        <div className="flex items-center">
+          <Link href="https://t.me/emcool27" className="text-white">
+            {" "}
+            Created by Emir
+          </Link>{" "}
+          <FaLocationArrow />
         </div>
       </div>
     </footer>

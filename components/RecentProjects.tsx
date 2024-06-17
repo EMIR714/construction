@@ -7,8 +7,11 @@ import { PinContainer } from "./ui/Pin";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20 ">
-      <h1 className="heading mt-32 sm:mt-0 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
+    <div>
+      <h1
+        className="heading mt-2 sm:mt-0 md:mt-0 lg:mt-2 xl:mt-2 2xl:mt-2"
+        id="garantii"
+      >
         <span className="text-purple mr-2">Даем юридические гарантии</span>
         при покупке квартиры
       </h1>
