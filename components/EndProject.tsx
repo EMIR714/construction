@@ -10,13 +10,13 @@ const End = () => {
     <div className="relative flex lg:flex-row flex-col max-container" id="end">
       <div className="min-w-[50%]">
         <div className="flex items-center justify-center">
-          <Image src={end} alt="Logo" className="text-center rounded-3xl " />{" "}
+          <Image src={end} alt="Logo" className="text-center rounded-3xl " />
         </div>
       </div>
 
       <div className="lg:w-1/2 w-full  lg:h-auto md:h-[250px] h-[150px] ml-2">
         <h2 className="text-[20px] md:text-3xl lg:text-4xl text-center heading">
-          Так же Вы можете посмотреть{" "}
+          Так же Вы можете посмотреть
           <span className="text-purple">наш завершенный объект</span>
         </h2>
         <p
@@ -26,10 +26,10 @@ const End = () => {
             margin: "1vh 0",
           }}
         >
-          Жилой комплекс "Пионер", визитная карточка нашей строительной
-          компании. Вы можете записаться на экскурсию по комплексу и убедиться
-          своими глазами, насколько качественно и профессионально мы выполняем
-          свою работу.
+          Жилой комплекс &quot;Пионер&quot;, визитная карточка нашей
+          строительной компании. Вы можете записаться на экскурсию по комплексу
+          и убедиться своими глазами, насколько качественно и профессионально мы
+          выполняем свою работу.
         </p>
         <div className="flex justify-center">
           <Link href="https://pioner.kg/pioner/">
