@@ -1,6 +1,7 @@
 const MapWidget = () => {
   return (
     <div
+      className="w-full h-full"
       dangerouslySetInnerHTML={{
         __html: `
           <a class="dg-widget-link" href="http://2gis.kg/bishkek/firm/70000001043043738/center/74.62040662765504,42.863052698108945/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Бишкека</a>
@@ -13,7 +14,7 @@ const MapWidget = () => {
           <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
           <script charset="utf-8">
             new DGWidgetLoader({
-              "width":640,"height":600,"borderColor":"#a3a3a3",
+              "max-width":640,"max-height":600,"borderColor":"#a,3a3a3",
               "pos":{"lat":42.863052698108945,"lon":74.62040662765504,"zoom":16},
               "opt":{"city":"bishkek"},
               "org":[{"id":"70000001043043738"}]

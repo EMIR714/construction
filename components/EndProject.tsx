@@ -17,7 +17,11 @@ const End = () => {
       <div className="lg:w-1/2 w-full  lg:h-auto md:h-[250px] h-[150px] ml-2">
         <h2 className="text-[20px] md:text-3xl lg:text-4xl text-center heading">
           Так же Вы можете посмотреть
-          <span className="text-purple">наш завершенный объект</span>
+          <span className="text-purple">
+            {" "}
+            <br />
+            наш завершенный объект
+          </span>
         </h2>
         <p
           className="lg:text-xl lg:font-normal font-light text-sm"

@@ -22,7 +22,7 @@ const customStyles = {
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
-    width: "50%",
+    width: "90%",
     height: "70%",
     transform: "translate(-50%, -50%)",
     borderRadius: "5px",

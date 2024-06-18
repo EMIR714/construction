@@ -7,7 +7,10 @@ import { InfiniteMovingCards } from "./ui/InfiniteCards";
 
 const Clients = () => {
   return (
-    <section id="testimonials" className="py-20">
+    <section
+      id="testimonials"
+      className="py-20 mt-64 sm:mt-0 md:mt-0 lg:mt-2 xl:mt-2 2xl:mt-2"
+    >
       <h1 className="heading">
         Отзывы от наших
         <span className="text-purple"> дольщиков</span>
