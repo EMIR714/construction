@@ -1,3 +1,5 @@
+import React from "react";
+
 const MapWidget = () => {
   return (
     <div
@@ -14,7 +16,7 @@ const MapWidget = () => {
           <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
           <script charset="utf-8">
             new DGWidgetLoader({
-              "max-width":640,"max-height":600,"borderColor":"#a,3a3a3",
+              "width":"100%", "height": 250, "borderColor":"#a3a3a3",
               "pos":{"lat":42.863052698108945,"lon":74.62040662765504,"zoom":16},
               "opt":{"city":"bishkek"},
               "org":[{"id":"70000001043043738"}]

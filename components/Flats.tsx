@@ -139,7 +139,7 @@ export default function Flats() {
                           >
                             Посмотреть все
                           </Button>
-                          <Link href="https://api.whatsapp.com/send/?phone=996999690000">
+                          <Link href="https://api.whatsapp.com/send/?phone=996999690000&text=Здравствуйте,%20хочу%20получить%20все%20планировки%20квартир.">
                             <MagicButton
                               title="WhatsApp"
                               icon={<FaLocationArrow />}

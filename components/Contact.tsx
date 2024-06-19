@@ -96,7 +96,7 @@ const Contact = () => {
         <Link href="https://2gis.kg/bishkek/firm/70000001043043738">
           <div className="flex gap-3">
             <div>
-              <Image src={Pin} width={60} height={40} alt="pin" />
+              <Image src={Pin} width={40} height={40} alt="pin" />
             </div>
             <div>
               <p className="lg:text-xl lg:font-normal font-light text-sm">
@@ -111,7 +111,7 @@ const Contact = () => {
 
         <div className="flex gap-3 items-center">
           <div>
-            <Image src={Call} width={60} height={40} alt="call" />
+            <Image src={Call} width={40} height={40} alt="call" />
           </div>
           <div className="flex flex-col gap-3">
             <Link href="tel:+996999690000">
@@ -135,7 +135,7 @@ const Contact = () => {
           <div className="flex gap-3 items-center">
             <Image
               src={Email}
-              width={60}
+              width={40}
               height={40}
               alt="email"
               style={{ transform: "rotate(270deg)" }}
@@ -147,17 +147,17 @@ const Contact = () => {
         </Link>
         <div className="flex justify-around">
           <Link href="https://www.instagram.com/pionerkg/">
-            <Image src={Insta} width={50} height={50} alt="Insta" />{" "}
+            <Image src={Insta} width={40} height={40} alt="Insta" />{" "}
           </Link>
           <Link href="https://api.whatsapp.com/send/?phone=996999690000">
             {" "}
-            <Image src={WhatsApp} width={50} height={50} alt="WhatsApp" />{" "}
+            <Image src={WhatsApp} width={40} height={40} alt="WhatsApp" />{" "}
           </Link>
           <Link href="https://www.facebook.com/people/%D0%A1%D1%82%D1%80%D0%BE%D0%B8%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F-%D0%BA%D0%BE%D0%BC%D0%BF%D0%B0%D0%BD%D0%B8%D1%8F-%D0%9F%D0%B8%D0%BE%D0%BD%D0%B5%D1%80/100064107008835/">
-            <Image src={Facebook} width={50} height={50} alt="Facebook" />
+            <Image src={Facebook} width={40} height={40} alt="Facebook" />
           </Link>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-1">
           {" "}
           <MagicButton
             title="Заказать звонок"
@@ -171,6 +171,7 @@ const Contact = () => {
       <div className="lg:w-1/2 w-full lg:h-auto md:h-[350px] h-[250px] ml-2 rounded-2xl overflow-hidden">
         <MapWidget />
       </div>
+
       <div>
         <Modal
           isOpen={modalIsOpen}
